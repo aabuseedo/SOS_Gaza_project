@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="370dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white3"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp">
+
+    <ImageView
+        android:id="@+id/imageView_item_alert"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/image_alert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_alertTitle_item_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/din_medium"
+        android:text="@string/title_alert"
+        android:textColor="@color/black1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_item_alert"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_alertDescription_item_alert"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/din_regular"
+        android:justificationMode="inter_word"
+        android:text="@string/description_alert"
+        android:textColor="@color/black3"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_item_alert"
+        app:layout_constraintEnd_toEndOf="@+id/tv_alertTitle_item_alert"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_alertDate_item_alert"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alertTitle_item_alert"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_alertOwner_item_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/owner_alert"
+        android:fontFamily="@font/din_regular"
+        android:textColor="@color/red1"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_alertTitle_item_alert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_alertTitle_item_alert" />
+
+    <TextView
+        android:id="@+id/tv_alertDate_item_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/date_alert"
+        android:fontFamily="@font/din_regular"
+        android:textColor="@color/black2"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

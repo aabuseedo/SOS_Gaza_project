@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_item"
+        android:icon="@drawable/icon_home_white"
+        android:title="الرئيسية" />
+    <item
+        android:id="@+id/map_item"
+        android:icon="@drawable/icon_map_white"
+        android:title="الخريطة" />
+    <item
+        android:id="@+id/alerts_item"
+        android:icon="@drawable/icon_alerts_white"
+        android:title="التنبيهات" />
+    <item
+        android:id="@+id/courses_item"
+        android:icon="@drawable/icon_courses_white"
+        android:title="الدورات" />
+    <item
+        android:id="@+id/profile_item"
+        android:icon="@drawable/icon_profile_white"
+        android:title="حسابي" />
+
+</menu>

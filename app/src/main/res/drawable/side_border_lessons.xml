@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- الخلفية البيضاء -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white3" />
+        </shape>
+    </item>
+
+    <!-- الحد الأيسر -->
+    <item android:left="0dp" android:right="1dp">
+        <shape android:shape="rectangle">
+            <size android:width="2dp" />
+            <solid android:color="@color/red1" />
+        </shape>
+    </item>
+
+    <!-- الحد الأيمن -->
+    <item android:right="0dp" android:left="1dp">
+        <shape android:shape="rectangle">
+            <size android:width="2dp" />
+            <solid android:color="@color/red1" />
+        </shape>
+    </item>
+
+</layer-list>

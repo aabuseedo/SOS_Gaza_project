@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.ConfirmChangePhoneNumActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AssistantSmartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SosCountdownActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChangePhoneNumActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ManageEmergencyNumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LessonsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AlertsDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.account.PersonalInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.account.VerifyAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.account.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.account.LoginActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.welcome.DescriptionActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".activity.welcome.DescriptionActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".activity.welcome.DescriptionActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".activity.welcome.DescriptionActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".activity.welcome.StartActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC7LIQtv0fq3lsgrIYOcYbIbUwUWR4_8Wo" />
+
+        <service
+            android:name=".services.MyAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+    </application>
+
+</manifest>

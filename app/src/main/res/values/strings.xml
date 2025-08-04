@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">SOS Gaza</string>
+
+    <!-- _______________________________________________________________________________________ -->
+
+    <string name="title_description_1">أرسل نداء استغاثة في لحظة</string>
+    <string name="description_1">عند الخطر، ضغطة واحدة تكفي! أرسل موقعك وبياناتك فورًا لعائلتك أو جهات الطوارئ – حتى بدون إنترنت.</string>
+    <string name="title_description_2">ساعد بذكاء في أصعب اللحظات</string>
+    <string name="description_2">اتبع خطوات واضحة للتعامل مع حالات طبية طارئة مثل النزيف، الاختناق، أو نوبات الربو – بدون الحاجة لإنترنت.</string>
+    <string name="title_description_3">تعلّم كيف تنجو</string>
+    <string name="description_3">فيديوهات قصيرة ومبسّطة تساعدك تتعلّم أهم مهارات السلامة والإسعافات الأولية وقت الأزمات.</string>
+    <string name="title_description_4">كن دائمًا على اطلاع</string>
+    <string name="description_4">استقبل إشعارات فورية من مصادر موثوقة حول الأماكن الخطرة والملاجئ المتاحة في منطقتك.</string>
+    <string name="button_description">التالي</string>
+
+    <!-- _______________________________________________________________________________________ -->
+
+    <string name="login_button">تسجيل دخول</string>
+    <string name="username">إسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="remember_me">تذكر معلومات تسجيل الدخول</string>
+
+    <string name="register_button">إنشاء حساب</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="verification_code">ادخل رمز التحقق</string>
+    <string name="resend_code">إعادة إرسال رمز التأكيد</string>
+    <string name="confirm_button">تأكيد</string>
+    <string name="back_button">للخلف</string>
+
+    <string name="complete_profile">أكمل معلوماتك الشخصية</string>
+    <string name="full_name">الإسم الكامل</string>
+    <string name="residence">مكان السكن</string>
+    <string name="medical_status">الحالة الطبية</string>
+    <string name="blood_type">فصيلة الدم</string>
+    <string name="emergency_contact">رقم الطوارئ</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- _______________________________________________________________________________________ -->
+
+    <string name="title_home">نداء استغاثة فوري !</string>
+    <string name="subtitle_home">اضغط لإرسال نداء استغاثة وموقعك فورًا.</string>
+    <string name="help_title_home">لا تعرف ماذا تفعل؟</string>
+    <string name="help_desc_home">اضغط هنا وسنرشدك لإنقاذ الموقف.</string>
+    <string name="btn_help_now_home">مساعدة الآن</string>
+
+    <string name="title_sos_countdown">سيتم إرسال نداء الاستغاثة خلال ...</string>
+    <string name="timer_sos_countdown">10</string>
+    <string name="description_sos_countdown">سيتم إرسال موقعك ونداء استغاثة للجهات المحددة. تأكد من الرقم أو ألغِ الإرسال إن كنت بخير.</string>
+    <string name="cb_emergency_sos_countdown">الإسعاف والطوارئ</string>
+    <string name="cb_civil_defense_sos_countdown">الدفاع المدني</string>
+    <string name="cb_police_sos_countdown">الشرطة</string>
+    <string name="btn_cancel_sos_countdown">إلغاء الإرسال</string>
+
+
+    <!-- _______________________________________________________________________________________ -->
+
+    <string name="title_map">خارطة قطاع غزة</string>
+    <string name="search_map">ابحث عن مركز طبي، ملجأ، . . </string>
+    <string name="nearby_title_map">أماكن قريبة منك:</string>
+    <string name="place1_map">🏥 مستشفى الشفاء – على بُعد 1.2 كم</string>
+    <string name="place2_map">🚒 مركز الدفاع المدني – على بُعد 1.7 كم</string>
+    <string name="place3_map">🐒 ملجأ منطقة الرمال – على بُعد 2.0 كم</string>
+
+    <!-- _______________________________________________________________________________________ -->
+
+    <string name="title_fragment_alert">الإشعارات</string>
+    <string name="title_alert">عنوان النشرة</string>
+    <string name="description_alert">محتوى مختصر للنشرةمحتوى مختصر للنشرةمحتوى مختصر للنشرةمحتوى مختصر للنشرة محتوى مختصر للنشرة.......</string>
+    <string name="owner_alert">وزارة الداخلية</string>
+    <string name="date_alert">7 - 5 - 2025</string>
+    <string name="research_fragment_alert">بحث</string>
+
+    <string name="title_alert_details">تفاصيل الإشعار</string>
+    <string name="owner_alert_details"> وزارة الصحة الفلسطينية</string>
+    <string name="date_alert_details">7 - 5 - 2025</string>
+    <string name="title_alert_alert_details">تعليق دوام المراكز الصحية</string>
+    <string name="details_alert_alert_details">تُعلن وزارة الصحة الفلسطينية أن جميع المراكز الصحية في مدينة غزة ستُغلق أبوابها اليوم الإثنين الموافق 19 مايو 2025، بدءًا من الساعة 12:00 ظهرًا وحتى إشعار آخر، وذلك نظرًا للتصعيد الأمني الحاصل في المنطقة.\n\nويأتي هذا القرار حفاظًا على سلامة المرضى والكادر الطبي، ووفقًا للتوصيات الصادرة عن لجنة الطوارئ المركزية. سيتم تحويل الحالات الطارئة إلى مستشفى الشفاء ومستشفى الأندونيسي فقط خلال فترة الإغلاق.\n\nنُهيب بالمواطنين متابعة المستجدات عبر القنوات الرسمية، والالتزام بالتعليمات الصادرة حفاظًا على سلامتكم.</string>
+
+    <!-- _______________________________________________________________________________________ -->
+
+    <string name="title_fragment_course">الدورات التدريبية</string>
+    <string name="title_course">الإسعافات الأولية</string>
+    <string name="description_course">دروس تعليمية عن كيفية التعامل مع الجروح، النزيف، الإغماء، الكسر، الحروق، إلخ.</string>
+    <string name="Number_video_course">14فيديو</string>
+
+    <string name="title_activity_lessons">الدروس</string>
+    <string name="title_lessons">الإسعافات الأولية</string>
+    <string name="name_lessons">اسم الدرس</string>
+    <string name="description_lessons">كيفية التصرف في حال استمرار نزيف الجرح بشكل مفاجئ.</string>
+
+    <!-- _______________________________________________________________________________________ -->
+
+    <string name="userName_fragment_profile">عبدالله رجب ابو سيدو</string>
+    <string name="residence_fragment_profile">  غزة - حي النصر</string>
+    <string name="phone_num_fragment_profile">رقم الهاتف</string>
+    <string name="emergency_contact_fragment_profile">رقم الطوارئ</string>
+    <string name="medical_status_fragment_profile">الحالة الصحية</string>
+    <string name="blood_type_fragment_profile">فصيلة الدم</string>
+    <string name="edit_profile_fragment_profile">تعديل الملف الشخصي</string>
+    <string name="edit_emergency_fragment_profile">إدارة رقم الطوارئ</string>
+    <string name="edit_phone_fragment_profile">تعديل رقم الهاتف</string>
+    <string name="edit_password_fragment_profile">تغير كلمة المرور</string>
+    <string name="out_fragment_profile">تسجيل الخروج</string>
+
+    <string name="title_activity_EditProfile">تعديل الملف الشخصي</string>
+    <string name="full_name_activity_EditProfile">تعديل إسم المستخدم</string>
+    <string name="residence_activity_EditProfile">تعديل مكان السكن</string>
+    <string name="medical_status_activity_EditProfile">تعديل الحالة الصحية</string>
+    <string name="blood_activity_EditProfile">تعديل فصيلة الدم</string>
+    <string name="btn_edit_data_activity_EditProfile">تعديل</string>
+
+    <string name="title_edit_emergency_number">إدارة رقم الطوارئ</string>
+    <string name="description_edit_emergency_number">يرجى إدخال رقم شخص موثوق به سيتم التواصل معه عند الضغط على زر SOS.</string>
+    <string name="hint_edit_emergency_number">أدخل رقم الطوارئ (مثال: 0599123456)</string>
+    <string name="btn_edit_emergency_number">تعديل</string>
+
+    <string name="title_change_phoneNum">تعديل رقم الهاتف</string>
+    <string name="description_change_phoneNum">رقم الهاتف هو وسيلة التواصل الأساسية معك. تأكد من إدخاله بدقة لتجنّب فقدان الوصول إلى حسابك.</string>
+    <string name="hint1_change_phoneNum">ادخل رقم الهاتف الحالي</string>
+    <string name="hint2_change_phoneNum">ادخل رقم الهاتف الجديد</string>
+    <string name="btn_change_phoneNum">تعديل</string>
+
+    <string name="title_ConfirmChangePhoneNumActivity">تعديل رقم الهاتف</string>
+    <string name="description_ConfirmChangePhoneNumActivity">ادخل رمز التحقق</string>
+    <string name="hint1_ConfirmChangePhoneNumActivity">إعادة إرسال رمز التأكيد</string>
+    <string name="btn_ConfirmChangePhoneNumActivity">تأكيد</string>
+
+    <string name="title_ChangePassword">تغيير كلمة المرور</string>
+    <string name="description_ChangePassword">يرجى إدخال كلمة المرور الحالية ثم تعيين كلمة مرور جديدة للحفاظ على أمان حسابك.</string>
+    <string name="hint1_ChangePassword">كلمة المرور الحالية</string>
+    <string name="hint2_ChangePassword">كلمة المرور الجديدة</string>
+    <string name="hint3_ChangePassword">تأكيد كلمة المرور الجديدة</string>
+    <string name="btn_ChangePassword">حفظ التغيير</string>
+
+</resources>

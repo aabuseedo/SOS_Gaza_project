@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_40_sos_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_80_sos_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <TextView
+        android:id="@+id/tv_title_sos_countdown"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/din_medium"
+        android:gravity="center"
+        android:text="@string/title_sos_countdown"
+        android:textColor="@color/black2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/timer_container_sos_countdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/timer_container_sos_countdown"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_40_sos_countdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_sos_countdown">
+
+        <ProgressBar
+            android:id="@+id/progress_circular_sos_countdown"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/circular_progress_red" />
+
+        <TextView
+            android:id="@+id/tv_timer_count_sos_countdown"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/din_medium"
+            android:gravity="center"
+            android:text="@string/timer_sos_countdown"
+            android:textColor="@color/black1"
+            android:textSize="36sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_description_sos_countdown"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/din_regular"
+        android:gravity="center"
+        android:text="@string/description_sos_countdown"
+        android:textColor="@color/black2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_40_sos_countdown" />
+
+    <EditText
+        android:id="@+id/et_phone_sos_countdown"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/item_edit_text"
+        android:drawableStart="@drawable/ic_arrow_down"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/din_regular"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:textColor="@color/black1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_description_sos_countdown" />
+
+    <LinearLayout
+        android:id="@+id/checkbox_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_phone_sos_countdown">
+
+        <CheckBox
+            android:id="@+id/cb_emergency_sos_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/din_medium"
+            android:text="@string/cb_emergency_sos_countdown"
+            android:textColor="@color/black2"
+            android:textSize="16sp"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/cb_civil_defense_sos_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/din_medium"
+            android:text="@string/cb_civil_defense_sos_countdown"
+            android:textColor="@color/black2"
+            android:textSize="16sp"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/cb_police_sos_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/din_medium"
+            android:text="@string/cb_police_sos_countdown"
+            android:textColor="@color/black2"
+            android:textSize="16sp"
+            android:checked="true"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancel_sos_countdown"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/item_button_red"
+        android:fontFamily="@font/din_medium"
+        android:text="@string/btn_cancel_sos_countdown"
+        android:textColor="@color/white2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_80_sos_countdown" />
+</androidx.constraintlayout.widget.ConstraintLayout>

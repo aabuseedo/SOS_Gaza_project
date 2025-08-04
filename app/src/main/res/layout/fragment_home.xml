@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2">
+
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/din_medium"
+        android:text="@string/title_home"
+        android:textColor="@color/red1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_main_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/din_regular"
+        android:text="@string/subtitle_home"
+        android:textColor="@color/black2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_sos_button_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_sos_button_home"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/tv_subtitle"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="SOS Icon"
+        android:src="@drawable/sos_icon"
+        app:layout_constraintBottom_toTopOf="@+id/iv_gaza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_gaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_sos_button_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="176dp"
+        android:src="@drawable/gaza_icon"
+        app:layout_constraintBottom_toTopOf="@+id/help_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/help_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/bg_card_rounded"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_help_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/din_medium"
+            android:text="@string/help_title_home"
+            android:textColor="@color/black1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_help_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/din_regular"
+            android:text="@string/help_desc_home"
+            android:textColor="@color/black2"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_help_now_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/item_button_red"
+            android:fontFamily="@font/din_medium"
+            android:text="@string/btn_help_now_home"
+            android:textColor="@color/white2"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

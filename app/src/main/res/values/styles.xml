@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomNavTextAppearance" parent="TextAppearance.AppCompat.Caption">
+        <item name="fontFamily">@font/din_regular</item> <!-- غيره إلى خطك -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/red1</item> <!-- أو حسب ما تريد -->
+    </style>
+</resources>

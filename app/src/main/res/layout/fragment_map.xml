@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white3"
+    android:padding="0dp"
+    app:layoutDescription="@xml/fragment_map_scene">
+
+    <TextView
+        android:id="@+id/tv_map_title"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white3"
+        android:fontFamily="@font/din_medium"
+        android:gravity="center"
+        android:text="@string/title_map"
+        android:textColor="@color/red1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/map_view"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/search_section"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_map_title" />
+
+    <!-- أزرار عائمة على الخريطة -->
+    <LinearLayout
+        android:id="@+id/map_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/search_section"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_filter_map"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_button_bg"
+            android:contentDescription="فلتر"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_filter" />
+
+        <ImageButton
+            android:id="@+id/btn_zoom_in_map"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_button_bg"
+            android:contentDescription="تكبير"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_zoom_in" />
+
+        <ImageButton
+            android:id="@+id/btn_zoom_out_map"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_button_bg"
+            android:contentDescription="تصغير"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_zoom_out" />
+    </LinearLayout>
+
+    <!-- القسم السفلي للبحث والنتائج -->
+    <LinearLayout
+        android:id="@+id/search_section"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:visibility="invisible"
+            android:layout_width="24dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- حقل البحث -->
+        <AutoCompleteTextView
+            android:id="@+id/et_search_map"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/item_edit_text"
+            android:drawableLeft="@drawable/ic_arrow_down"
+            android:ems="10"
+            android:hint="@string/search_map"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        <!-- نتائج البحث -->
+        <TextView
+            android:id="@+id/tv_nearby_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/din_medium"
+            android:text="@string/nearby_title_map"
+            android:textColor="@color/black1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_place_1_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/din_regular"
+            android:text="@string/place1_map"
+            android:textColor="@color/black2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_place_2_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/din_regular"
+            android:text="@string/place2_map"
+            android:textColor="@color/black2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_place_3_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/din_regular"
+            android:text="@string/place3_map"
+            android:textColor="@color/black2"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- سهم يشير للسحب -->
+
+    <ImageView
+        android:id="@+id/btn_arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/app_name"
+        android:elevation="7dp"
+        android:src="@drawable/ic_arrow_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_section" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
